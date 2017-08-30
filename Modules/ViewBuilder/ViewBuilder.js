@@ -24,18 +24,22 @@
 
 			//this.Vlt.xRange = [-5,5];
 			//this.Vlt.yRange = [-5,5];
+			
 			this.Vlt.zRange = [0, 3];
+			this.Vlt.Noise = [0.2,0.2,0.2];
 			this.Vlt.zStep = 1; //in minimum of single units
 			this.Vlt.xStep = 1; //in minimum of single units
 			this.Vlt.yStep = 1; //in minimum of single units
-			this.Vlt.xRadius = 3;
+			this.Vlt.xRadius = 5;
 			this.Vlt.zRadius = 3;
-			this.Vlt.yRadius = 3;
-			this.Vlt.probRange = [.3, .05];
+			this.Vlt.yRadius = 5;
+			this.Vlt.probRange = [.3, 0];
+			this.Vlt.connRange = [.2, 0];
 			this.Vlt.colorScheme = (x,y,z) =>{
-				let r = (255<<16)&0xff0000;//(Math.floor((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])*255) << 16) & 0xFF0000;
+				console.log([x,y,z], (1-((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])))*255);
+				let r = (Math.floor((1- ((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])))*255) << 16) & 0xFF0000;
 				let g = (Math.floor((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])*255) <<  8) & 0x00FF00;
-				let b = 0//(Math.floor((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])*255)      ) & 0x0000FF;
+				let b = (0& 0x0000ff);//(Math.floor((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])*255)      ) & 0x0000FF;
 				
 				return (r+g+b);
 			}
@@ -44,9 +48,16 @@
 
 			fun(null, com);
 		}
+
 		BuildNetwork(com, fun){
 			console.log("ViewBuilder/BuildNetwork");
 			
+			if (!("ConnData" in this.Vlt))
+				this.Vlt.ConnData = {};
+			if (!("Locs" in this.Vlt))
+				this.Vlt.Locs = [];
+			if (!("Levels" in this.Vlt))
+				this.Vlt.Levels = {};
 			if (!("Locs" in this.Vlt))
 				this.Vlt.Locs = [];
 
@@ -68,6 +79,8 @@
 					}
 				}
 			}
+
+
 			this.Vlt.nodeCount = 0; 
 			//based on the heigh determine where nodes actually exist and push them to the Nodes array in this.Vlt
 			for (let i = 0; i<this.Vlt.Locs.length; i ++){
@@ -77,17 +90,61 @@
 				if (Math.random()<(this.Vlt.probRange[0] + locProb)){
 					//we will add this location
 					this.Vlt.nodeCount++;
+
 					this.Vlt.Nodes[i] = {
-						Position: location,
+						Position: location.map( (num,idx)=>{return (num+(Math.random()*2*this.Vlt.Noise[idx] - this.Vlt.Noise[idx]));}),
 						Color: this.Vlt.colorScheme(...location),
-						Connections:[
-							"idOfConnectedNodes"
-						]
+						Connections:[]
 					}
+
+					if (!(location[2] in this.Vlt.Levels))
+						this.Vlt.Levels[[location[2]]] = [];
+					this.Vlt.Levels[location[2]].push(i);
+					
 				}
 			}
 
 			console.log("There are ", this.Vlt.nodeCount, " nodes");
+ 			console.log("Levels: ",this.Vlt.Levels);
+
+
+			//determing the connection numbers between layers;
+			let connPercent,connNum;
+			for (let z in this.Vlt.Levels){
+				if (! this.Vlt.Levels.hasOwnProperty(z))
+					continue;
+				connPercent =  this.Vlt.connRange[0] + (this.Vlt.connRange[1]-this.Vlt.connRange[0])*((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0]));
+				connNum = (Math.floor(this.Vlt.Levels[((z-1)<0?0:(z-1))].length*connPercent)<1?1:Math.floor(this.Vlt.Levels[((z-1)<0?0:(z-1))].length*connPercent));
+				this.Vlt.ConnData[z] = {
+					PercentBelow: connPercent,
+					NumberBelow: connNum
+				}
+			}
+			//console.log(this.Vlt.ConnData);
+
+
+			//add the connections to each node
+			for (let key in this.Vlt.Nodes){
+				if (! this.Vlt.Nodes.hasOwnProperty(key))
+					continue;
+				let z  = ((this.Vlt.Locs[key][2]-1)<0?0:(this.Vlt.Locs[key][2]-1));
+				//copy the array to select from 
+				let cpy = this.Vlt.Levels[z].map((value)=>{return value});
+				do {
+					let idx = Math.floor(Math.random()*cpy.length);
+					this.Vlt.Nodes[key].Connections.push(cpy.splice(idx,1)[0]);
+				}
+				while (this.Vlt.Nodes[key].Connections.length<this.Vlt.ConnData[z+1].NumberBelow)
+			}
+
+			//console.log(this.Vlt.Nodes);
+
+
+
+
+
+
+
 
 			fun(null,com);
 		}

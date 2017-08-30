@@ -24,11 +24,16 @@
 		domElement.on("mouseenter",(evt) => {
 		});
 		domElement.on("mouseleave", (evt) => {
+			let info = {};			
+			info.Action = 'MouseLeave';
+			this.send({Cmd:"DispatchEvent", info:info, mouse:Vlt.Mouse}, this.Par.Handler);
+			evt.stopPropagation();
+			evt.returnValue = false;
 		});
 		domElement.on("wheel", (evt) =>{
-			var evt = evt.originalEvent;
-			var fac = (evt.detail < 0 || evt.wheelDelta > 0) ? 1 : -1;
-			var info = {};
+			let info = {};
+			evt = evt.originalEvent;
+			let fac = (evt.detail < 0 || evt.wheelDelta > 0) ? 1 : -1;
 			info.Action = 'Wheel';
 			info.Factor = fac;
 			this.send({Cmd:"DispatchEvent", info:info, mouse:Vlt.Mouse}, this.Par.Handler);
@@ -36,9 +41,7 @@
 			evt.returnValue = false;
 		});
 		domElement.on("mousedown", (evt) => {
-			var info = mouseRay(evt, Vlt);
-			if (info == null)
-				info = {};
+			info = {};
 			info.Mouse = {};
 			info.Mouse.x = evt.clientX;
 			info.Mouse.y = evt.clientY;
@@ -57,9 +60,7 @@
 			evt.returnValue = false;
 		});
 		domElement.on("mousemove", (evt) =>{
-			var info = mouseRay(evt, Vlt);
-			if (!info)
-				return;
+			let info = {};			
 			info.Action = 'Move';
 			info.Mouse = {};
 			info.Mouse.x = evt.clientX;
@@ -69,7 +70,7 @@
 			evt.returnValue = false;
 		});
 		domElement.on("mouseup", (evt) => {
-			var info = {};
+			let info = {};
 			switch (evt.which) {
 				case 1:	// Left mouse
 					info.Action = 'LeftMouseUp';
@@ -85,72 +86,12 @@
 			evt.returnValue = false;
 		});
 
-		domElement.on('keydown', function (evt) {
-			switch (evt.code) {
-				case 'F10':
-					evt.preventDefault();
-					openCLI();
-					break;
-				case 'F2':
-					if (Vlt.Active)
-						Vlt.Active = false;
-					else
-						Vlt.Active = true;
-					Vlt.knt = 0;
-				default:
-			}
+		domElement.keypress(function (evt) {
+			evt.preventDefault();
+			let info = {};			
+			info.Action = 'keydown';
+			info.Key = evt.keyCode;
+			this.send({Cmd:"DispatchEvent", info:info, mouse:Vlt.Mouse}, this.Par.Handler);
 		});
-
 	}
-
-	//-----------------------------------------------------mouseRay
-	function mouseRay(evt, Vlt) {
-		var info = {};
-		//Vlt.Ray.precision = 0.00001;
-		//container = document.getElementById("domElement");
-		let container = Vlt.domElement;
-		var w = container.width;
-		var h = container.height;
-		var vec = new THREE.Vector2();
-		vec.x = 2 * (evt.clientX - container.offsetLeft) / w - 1;
-		vec.y = 1 - 2 * (evt.clientY - container.offsetTop) / h;
-		// Vlt.Ray.setFromCamera(vec, Vlt.Camera);
-		// var hits = Vlt.Ray.intersectObjects(Vlt.Scene.children, true);
-		// var hit;
-		// var obj;
-		//console.log('Hits length is', hits.length);
-		// for (var i = 0; i < hits.length; i++) {
-		// 	hit = hits[i];
-		// 	obj = hit.object;
-		//
-		// 	var pt;
-		// 	while (obj != null) {
-		//
-		// 		//	console.log('hit', hit);
-		// 		//	console.log('mouseRay', data);
-		//
-		// 		switch (obj.name) {
-		// 			case 'heatField':
-		//
-		// 				info.Type = 'heatField';
-		// 				info.Point = hit.point;
-		// 				break;
-		//
-		// 			case 'bugSystem':
-		// 				info.Type = 'bugSystem';
-		// 				info.Point = hit.point;
-		// 				break;
-		// 		}
-		// 		pt = hit.point;
-		//
-		//
-		// 		obj = obj.parent;
-		// 	}
-		// }
-
-		return info;
-	}
-
-
-
 })();
