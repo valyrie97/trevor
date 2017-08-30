@@ -1,0 +1,6 @@
+{
+	"Apex": {
+		"Entity": "ViewBuilder.js",
+		"$Setup": "Setup"
+	}
+}

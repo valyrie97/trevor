@@ -1,0 +1,10 @@
+{
+  "$Setup": "Setup",
+  "$Start": "Start",
+  "Entity": "Http.js",
+  "Nxs": "{xGraph}Web/Server/Nxs.js",
+  "Port": 8080,
+  "Url": "Heatbugs",
+  "Module": "xGraph:Web/Server",
+  "Pid": "D7EB650CD2F54C66A01F7AC6EB10BCF8"
+}

@@ -1,0 +1,37 @@
+=================================================
+/usr/bin/nodejs
+/home/trevor/xGraph/Nexus/Nexus/Nexus.js
+Config=config.json
+xGraph=/home/trevor/Scrapyard/../xGraph
+Scrapyard=/home/trevor/Scrapyard/../Scrapyard
+{
+  "xGraph": "/home/trevor/Scrapyard/../xGraph",
+  "Scrapyard": "/home/trevor/Scrapyard/../Scrapyard",
+  "Cache": "cache",
+  "Modules": {
+    "Nexus": {
+      "Module": "xGraph:Nexus/Nexus"
+    },
+    "Controller": {
+      "Module": "Scrapyard:Modules/ViewBuilder"
+    },
+    "Server": {
+      "Module": "xGraph:Web/Server",
+      "Par": {
+        "Apex": {
+          "Thing": "$Controller"
+        },
+        "Port": 8080,
+        "Url": "Paint"
+      }
+    }
+  }
+}
+
+--Nexus/Initialiate
+
+--Nexus/Setup
+
+--Nexus/Start
+
+--Nexus/Run
