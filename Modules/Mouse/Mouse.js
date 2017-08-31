@@ -15,6 +15,11 @@
 		console.log('--Mouse/SetDomElement');
 		let Vlt = this.Vlt;
 		Vlt.domElement = $(com.DomElement);
+		
+		//needed these to get the focus to work for keydown events
+		Vlt.domElement.focus();
+		Vlt.domElement.attr('tabindex', 0);
+
 		Vlt.Active = false;
 		Vlt.Mouse = {};
 		Vlt.Mouse.Mode = 'Idle';
@@ -53,6 +58,7 @@
 					info.Action = 'RightMouseDown';
 					break;
 				default:
+					console.log("mousedown which");
 					return;
 			}
 			this.send({Cmd:"DispatchEvent", info:info, mouse:Vlt.Mouse}, this.Par.Handler);
@@ -85,12 +91,10 @@
 			evt.stopPropagation();
 			evt.returnValue = false;
 		});
-
-		domElement.keypress(function (evt) {
-			evt.preventDefault();
+		domElement.on("keydown", (evt) =>{
 			let info = {};			
 			info.Action = 'keydown';
-			info.Key = evt.keyCode;
+			info.Key = evt.key;
 			this.send({Cmd:"DispatchEvent", info:info, mouse:Vlt.Mouse}, this.Par.Handler);
 		});
 	}

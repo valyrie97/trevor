@@ -6,23 +6,18 @@ xGraph=/Users/tjgionet/trevor/../xGraph
 Scrapyard=/Users/tjgionet/trevor/
 {
   "xGraph": "/Users/tjgionet/trevor/../xGraph",
-  "Scrapyard": "/Users/tjgionet/trevor/",
   "Cache": "cache",
   "Modules": {
     "Nexus": {
-      "Module": "xGraph:Nexus/Nexus"
-    },
-    "Controller": {
-      "Module": "Scrapyard:Modules/ViewBuilder"
+      "Module": "xGraph:Nexus/Nexus",
+      "Par": {}
     },
     "Server": {
       "Module": "xGraph:Web/Server",
       "Par": {
-        "Apex": {
-          "Thing": "$Controller"
-        },
+        "Nxs": "{xGraph}Web/Server/Nxs.js",
         "Port": 8080,
-        "Url": "Paint"
+        "Url": "Heatbugs"
       }
     }
   }

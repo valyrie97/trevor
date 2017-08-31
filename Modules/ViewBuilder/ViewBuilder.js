@@ -25,24 +25,29 @@
 			//this.Vlt.xRange = [-5,5];
 			//this.Vlt.yRange = [-5,5];
 			
-			this.Vlt.zRange = [0, 3];
+			this.Vlt.zRange = [0, 2];
 			this.Vlt.Noise = [0.2,0.2,0.2];
 			this.Vlt.zStep = 1; //in minimum of single units
 			this.Vlt.xStep = 1; //in minimum of single units
 			this.Vlt.yStep = 1; //in minimum of single units
-			this.Vlt.xRadius = 5;
-			this.Vlt.zRadius = 3;
-			this.Vlt.yRadius = 5;
+			this.Vlt.xRadius = 2;
+			this.Vlt.zRadius = 2;
+			this.Vlt.yRadius = 2;
 			this.Vlt.probRange = [.3, 0];
 			this.Vlt.connRange = [.2, 0];
-			this.Vlt.colorScheme = (x,y,z) =>{
+			this.Vlt.gradientColor = false;
+			this.Vlt.colorSet = [[255,0,0],[0,255,0],[255,255,0],[0,0,255],[255,0,255],[0,255,255]];
+			this.Vlt.colorScheme = (this.Vlt.GradientColor? ((x,y,z) =>{
 				console.log([x,y,z], (1-((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])))*255);
 				let r = (Math.floor((1- ((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])))*255) << 16) & 0xFF0000;
 				let g = (Math.floor((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])*255) <<  8) & 0x00FF00;
 				let b = (0& 0x0000ff);//(Math.floor((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])*255)      ) & 0x0000FF;
 				
 				return (r+g+b);
-			}
+			}):((x,y,z)=>{
+				let rgb = this.Vlt.colorSet[Math.floor(Math.random()*this.Vlt.colorSet.length)];
+				return ((rgb[0]<<16&0xff0000)+(rgb[1]<<8&0xffff)+(rgb[2]&0xff));
+			}));
 
 			this.send({Cmd:"BuildNetwork"}, this.Par.Pid);
 
@@ -113,8 +118,10 @@
 			for (let z in this.Vlt.Levels){
 				if (! this.Vlt.Levels.hasOwnProperty(z))
 					continue;
+				console.log("z is ", z, ((z-1)<this.Vlt.zRange[0]?this.Vlt.zRange[0]:(z-1)));
 				connPercent =  this.Vlt.connRange[0] + (this.Vlt.connRange[1]-this.Vlt.connRange[0])*((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0]));
-				connNum = (Math.floor(this.Vlt.Levels[((z-1)<0?0:(z-1))].length*connPercent)<1?1:Math.floor(this.Vlt.Levels[((z-1)<0?0:(z-1))].length*connPercent));
+				let index = (((z-1)<this.Vlt.zRange[0]?this.Vlt.zRange[0]:(z-1)) in this.Vlt.Levels?((z-1)<this.Vlt.zRange[0]?this.Vlt.zRange[0]:(z-1)): (1+ ((z-1)<this.Vlt.zRange[0]?this.Vlt.zRange[0]:(z-1))));
+				connNum = (Math.floor(this.Vlt.Levels[index].length*connPercent)<1?1:(Math.floor(this.Vlt.Levels[index].length*connPercent)));
 				this.Vlt.ConnData[z] = {
 					PercentBelow: connPercent,
 					NumberBelow: connNum
@@ -127,7 +134,7 @@
 			for (let key in this.Vlt.Nodes){
 				if (! this.Vlt.Nodes.hasOwnProperty(key))
 					continue;
-				let z  = ((this.Vlt.Locs[key][2]-1)<0?0:(this.Vlt.Locs[key][2]-1));
+				let z  = ((this.Vlt.Locs[key][2]-1)<this.Vlt.zRange[0]?this.Vlt.zRange[0]:(this.Vlt.Locs[key][2]-1));
 				//copy the array to select from 
 				let cpy = this.Vlt.Levels[z].map((value)=>{return value});
 				do {

@@ -5,9 +5,10 @@
 	var dispatch = {
 		Setup: Setup,
 		Start: Start,
-		SetPosition: SetPosition,
-		DOMLoaded: DOMLoaded,
-		DispatchEvent: DispatchEvent
+		SetPosition,
+		Recolor,
+		DOMLoaded,
+		DispatchEvent
 	};
 
 	return Viewify(dispatch);
@@ -111,11 +112,21 @@
 				console.log(View)
 			});
 
-			loop();
+			let that = this;
 
+			loop();
 			fun(null, com);
 
 			function loop() {
+				//console.log(that.Vlt.Recolor);
+				if (that.Vlt.Recolor){
+					
+					that.send(
+						{Cmd:"Recolor"},
+						that.Par.Pid
+					);
+					that.Vlt.Recolor  = false;
+				}
 				View.Renderer.render(View.Scene, View.Camera);
 				requestAnimationFrame(loop);
 			}
@@ -148,6 +159,85 @@
 			fun(null, com);
 		});
 	}
+
+
+
+	function Recolor(com, fun){
+		console.log("Recolor");
+		
+		let View = this.Vlt.div.data("View");
+
+		while (View.Scene.children.length>2){
+			obj = View.Scene.children[View.Scene.children.length-1];
+     		View.Scene.remove(obj);
+		}
+		
+		this.send({ Cmd: "GetNetwork" }, this.Par.Server, (err, cmd) => {
+
+				this.Vlt.Network = cmd.Network;
+				let sphere, position, linkedNode, position2;
+
+				let matKeys = Object.keys(View.materials);
+				console.log(matKeys); 
+				let ids = Object.keys(this.Vlt.Network)
+				for (let key in this.Vlt.Network) {
+					if (!this.Vlt.Network.hasOwnProperty(key))
+						continue;
+
+					
+					let matindex = Math.floor(Math.random()*matKeys.length);
+					console.log(matindex);
+					sphere = new THREE.Mesh(View.geometry, View.materials[matKeys[matindex]]);
+					position = this.Vlt.Network[key].Position;
+					sphere.name = key;
+					sphere.position.x = position[0];
+					sphere.position.y = position[1];
+					sphere.position.z = position[2];
+
+					View.Scene.add(sphere);
+
+					let red = this.Vlt.Network[key].Color >>> 16 & 0xFFFFFF;
+					let green = this.Vlt.Network[key].Color >>> 8 & 0xFFFF;
+					let blue = this.Vlt.Network[key].Color & 0xff;
+
+					let r = (255 <<  16) & 0xFF0000; //none
+					let g = (255 <<  8) & 0x00FF00;//green
+					let b = (255        ) & 0x0000FF;
+
+					let color = r+g+b;
+
+					//we will now add the lines radiating from this sphere
+					var material = new THREE.LineBasicMaterial({ 
+						color: color , 
+						linewidth: 2
+					});
+					var geometry = new THREE.Geometry();
+
+					for (let i = 0; i < this.Vlt.Network[key].Connections.length; i++) {
+						let key2 = this.Vlt.Network[key].Connections[i];
+						if (key2==key)
+							continue;
+						linkedNode =  this.Vlt.Network[key2];
+						position2 = linkedNode.Position;
+						geometry.vertices.push(new THREE.Vector3(position[0], position[1], position[2]));
+						geometry.vertices.push(new THREE.Vector3(position2[0], position2[1], position2[2]));
+
+						var line = new THREE.Line(geometry, material);
+						line.name = (key<key2?`link${key}_${key2}`: `link${key2}_${key}`);
+						console.log(line.name);
+						View.Scene.add(line);
+
+					}
+
+
+				}
+
+				//console.log(View)
+			});
+
+	}
+
+
 
 	//-------------------------------------------------SetPosition
 	function SetPosition(com, fun) {
@@ -192,12 +282,15 @@
 			//harvest(Translate);
 			harvest(Rotate);
 			harvest(Zoom);
+			harvest(Keyed);
 		}
 		var key = Vlt.Mouse.Mode + '.' + info.Action;
 		if (info.Action == 'LeftMouseDown')
 			info = mouseRay(info, Vlt);
 		if ('Type' in info)
 			key += '.' + info.Type;
+		if ('Key' in info)
+			key += '.' + info.Key;
 		info.Key = key;
 		console.log('Dispatch', key);
 		if (key in dispatch) {
@@ -267,7 +360,7 @@
 	// TBD: Remove Three.js dependancy
 	function Select(info, Vlt) {
 		var dispatch = {
-			'Idle.LeftMouseDown.Artifact': start,
+			//'Idle.LeftMouseDown.Artifact': start,
 			'Select1.Move.Artifact': move,
 			'Select1.Move.Terrain': move,
 			'Select1.LeftMouseUp': mouseup,
@@ -364,14 +457,34 @@
 		View.Camera.updateProjectionMatrix();
 	}
 
+
+	//-----------------------------------------------------Zoom
+	// Move camera towards or away from Focus point
+	// TBD: Remove Three.js dependancy
+	function Keyed(info, Vlt) {
+		if (info.Action == 'Harvest') {
+			console.log('Harvest-Zoom');
+			info.Keys.push('Idle.keydown.n');
+			return;
+		}
+		//console.log("Zooooooming");
+		let View = Vlt.div.data('View');
+
+		Vlt.Recolor=true;
+
+	}
+
+
 	//-----------------------------------------------------Rotate
 	// Rotate view about current Focus
 	// TBD: Remove Three.js dependancy
 	function Rotate(info, Vlt) {
 		var dispatch = {
+			"Idle.LeftMouseDown":start,
 			'Idle.RightMouseDown': start,
 			'Rotate.Move': rotate,
 			'Rotate.RightMouseUp': stop,
+			'Rotate.LeftMouseUp': stop,
 			'Rotate.MouseLeave': stop
 		}
 		if (info.Action == 'Harvest') {
