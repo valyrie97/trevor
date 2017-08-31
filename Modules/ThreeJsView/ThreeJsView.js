@@ -185,7 +185,7 @@
 						continue;
 
 					
-					let matindex = Math.floor(Math.random()*matKeys.length);
+					let matindex = Math.floor(Math.random()*3);//matKeys.length);
 					console.log(matindex);
 					sphere = new THREE.Mesh(View.geometry, View.materials[matKeys[matindex]]);
 					position = this.Vlt.Network[key].Position;

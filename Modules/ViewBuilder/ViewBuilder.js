@@ -25,18 +25,45 @@
 			//this.Vlt.xRange = [-5,5];
 			//this.Vlt.yRange = [-5,5];
 			
-			this.Vlt.zRange = [0, 2];
+
+
+
+			//for the 3 layer grid wth gradient color by z axis
+			//
+			//
+			// this.Vlt.zRange = [0, 3];
+			// this.Vlt.Noise = [0.2,0.2,0.2];
+			// this.Vlt.zStep = 1; //in minimum of single units
+			// this.Vlt.xStep = 1; //in minimum of single units
+			// this.Vlt.yStep = 1; //in minimum of single units
+			// this.Vlt.xRadius = 5;
+			// this.Vlt.zRadius = 3;
+			// this.Vlt.yRadius = 5;
+			// this.Vlt.probRange = [.3, 0];
+			// this.Vlt.connRange = [.2, 0];
+			//this.Vlt.gradientColor = true;
+			
+
+
+
+
+
+
+
+
+
+			this.Vlt.zRange = [0, 1];
 			this.Vlt.Noise = [0.2,0.2,0.2];
 			this.Vlt.zStep = 1; //in minimum of single units
 			this.Vlt.xStep = 1; //in minimum of single units
 			this.Vlt.yStep = 1; //in minimum of single units
-			this.Vlt.xRadius = 2;
-			this.Vlt.zRadius = 2;
-			this.Vlt.yRadius = 2;
-			this.Vlt.probRange = [.3, 0];
-			this.Vlt.connRange = [.2, 0];
+			this.Vlt.xRadius = 1;
+			this.Vlt.zRadius = 1;
+			this.Vlt.yRadius = 1;
+			this.Vlt.probRange = [.5, .5];
+			this.Vlt.connRange = [.2, .2];
 			this.Vlt.gradientColor = false;
-			this.Vlt.colorSet = [[255,0,0],[0,255,0],[255,255,0],[0,0,255],[255,0,255],[0,255,255]];
+			this.Vlt.colorSet = [[255,0,0],[0,255,0],[255,255,0],[255,0,255],[0,255,255]];
 			this.Vlt.colorScheme = (this.Vlt.GradientColor? ((x,y,z) =>{
 				console.log([x,y,z], (1-((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])))*255);
 				let r = (Math.floor((1- ((z-this.Vlt.zRange[0])/(this.Vlt.zRange[1]-this.Vlt.zRange[0])))*255) << 16) & 0xFF0000;

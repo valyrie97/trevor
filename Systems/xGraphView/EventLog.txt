@@ -1,12 +1,12 @@
 =================================================
-/usr/local/bin/node
-/Users/tjgionet/xGraph/Nexus/Nexus/Nexus.js
+/usr/bin/nodejs
+/home/trevor/xGraph/Nexus/Nexus/Nexus.js
 Config=config.json
-xGraph=/Users/tjgionet/trevor/../xGraph
-Scrapyard=/Users/tjgionet/trevor/
+xGraph=/home/trevor/Scrapyard/../xGraph
+Scrapyard=/home/trevor/Scrapyard/
 {
-  "xGraph": "/Users/tjgionet/trevor/../xGraph",
-  "Scrapyard": "/Users/tjgionet/trevor/",
+  "xGraph": "/home/trevor/Scrapyard/../xGraph",
+  "Scrapyard": "/home/trevor/Scrapyard/",
   "Cache": "cache",
   "Modules": {
     "Nexus": {
