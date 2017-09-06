@@ -1,15 +1,18 @@
 =================================================
-/usr/local/bin/node
-/Users/tjgionet/xGraph/Nexus/Nexus/Nexus.js
+/usr/bin/nodejs
+/home/trevor/xCraft2/Nexus/Nexus/Nexus.js
 Config=config.json
-xGraph=/Users/tjgionet/trevor/../xGraph
-Scrapyard=/Users/tjgionet/trevor/
+xGraph=/home/trevor/Scrapyard/../xGraph
+xCraft2=/home/trevor/Scrapyard/../xCraft2
+Scrapyard=/home/trevor/Scrapyard/
 {
-  "xGraph": "/Users/tjgionet/trevor/../xGraph",
+  "xGraph": "/home/trevor/Scrapyard/../xGraph",
+  "xCraft2": "/home/trevor/Scrapyard/../xCraft2",
+  "Scrapyard": "/home/trevor/Scrapyard/",
   "Cache": "cache",
   "Modules": {
     "Nexus": {
-      "Module": "xGraph:Nexus/Nexus",
+      "Module": "xCraft2:Nexus/Nexus",
       "Par": {}
     },
     "Server": {
@@ -22,11 +25,8 @@ Scrapyard=/Users/tjgionet/trevor/
     }
   }
 }
+--Nexus/Genesis
+npm process exited with code:0
+Current working directory: /home/trevor/Scrapyard/Systems/HeatBugs
 
---Nexus/Initialiate
-
---Nexus/Setup
-
---Nexus/Start
-
---Nexus/Run
+--Nexus/Initiate

@@ -4,15 +4,17 @@
 	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
+
 		{
 			"name": "xGraphView",
 			"type": "node",
 			"request": "launch",
 			"cwd": "${workspaceRoot}/Systems/xGraphView",
-			"program": "${workspaceRoot}/../xGraph/Nexus/Nexus/Nexus.js",
+			"program": "${workspaceRoot}/../xCraft2/Nexus/Nexus/Nexus.js",
 			"args": [
 				"Config=config.json",
 				"xGraph=${workspaceRoot}/../xGraph",
+				"xCraft2=${workspaceRoot}/../xCraft2",				
 				"Scrapyard=${workspaceRoot}/"
 			],
 			"env": {
@@ -24,10 +26,11 @@
 			"type": "node",
 			"request": "launch",
 			"cwd": "${workspaceRoot}/Systems/HeatBugs",
-			"program": "${workspaceRoot}/../xGraph/Nexus/Nexus/Nexus.js",
+			"program": "${workspaceRoot}/../xCraft2/Nexus/Nexus/Nexus.js",
 			"args": [
 				"Config=config.json",
 				"xGraph=${workspaceRoot}/../xGraph",
+				"xCraft2=${workspaceRoot}/../xCraft2",
 				"Scrapyard=${workspaceRoot}/"
 			],
 			"env": {

@@ -1,10 +1,11 @@
 {
 	"xGraph": "{xGraph}",
 	"Scrapyard": "{Scrapyard}",
+	"xCraft2": "{xCraft2}",
 	"Cache": "cache",
 	"Modules": {
 		"Nexus": {
-			"Module": "xGraph:Nexus/Nexus"
+			"Module": "xCraft2:Nexus/Nexus"
 		},
 		"Controller": {
 			"Module": "Scrapyard:Modules/ViewBuilder"

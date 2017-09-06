@@ -52,15 +52,15 @@
 
 
 
-			this.Vlt.zRange = [0, 1];
+			this.Vlt.zRange = [0, 2];
 			this.Vlt.Noise = [0.2,0.2,0.2];
 			this.Vlt.zStep = 1; //in minimum of single units
 			this.Vlt.xStep = 1; //in minimum of single units
 			this.Vlt.yStep = 1; //in minimum of single units
-			this.Vlt.xRadius = 1;
-			this.Vlt.zRadius = 1;
-			this.Vlt.yRadius = 1;
-			this.Vlt.probRange = [.5, .5];
+			this.Vlt.xRadius = 2;
+			this.Vlt.zRadius = 2;
+			this.Vlt.yRadius = 2;
+			this.Vlt.probRange = [.3, .1];
 			this.Vlt.connRange = [.2, .2];
 			this.Vlt.gradientColor = false;
 			this.Vlt.colorSet = [[255,0,0],[0,255,0],[255,255,0],[255,0,255],[0,255,255]];

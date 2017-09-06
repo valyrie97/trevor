@@ -1,10 +1,12 @@
 {
-  "xGraph": "{xGraph}",
-  "Cache": "cache",
+	"xGraph": "{xGraph}",
+	"xCraft2": "{xCraft2}",
+	"Scrapyard": "{Scrapyard}",
+	"Cache": "cache",
   "Modules":{
 
 	"Nexus":{
-	  "Module": "xGraph:Nexus/Nexus",
+	  "Module": "xCraft2:Nexus/Nexus",
 	  "Par": {
 	  }
 	},

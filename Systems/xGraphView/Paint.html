@@ -13,7 +13,6 @@
 			SockIO.on('message', function (data) {
 				var com = JSON.parse(data);
 				console.log('<<' + com.Cmd);
-			//	console.log('Nxs', com.Nxs);
 				eval(com.Nxs);
 				console.log('apres eval');
 				delete com.Nxs;
