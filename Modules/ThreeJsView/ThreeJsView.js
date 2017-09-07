@@ -49,9 +49,9 @@
 			if (!("materials" in View))
 				View.materials = {};
 
+				debugger;
 
 			this.send({ Cmd: "GetNetwork" }, this.Par.Server, (err, cmd) => {
-
 				this.Vlt.Network = cmd.Network;
 				let sphere, position, linkedNode, position2;
 

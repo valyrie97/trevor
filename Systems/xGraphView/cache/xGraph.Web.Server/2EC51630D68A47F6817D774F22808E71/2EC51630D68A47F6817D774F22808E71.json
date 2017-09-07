@@ -1,0 +1,13 @@
+{
+  "$Setup": "Setup",
+  "$Start": "Start",
+  "Entity": "Http.js",
+  "Pid": "2EC51630D68A47F6817D774F22808E71",
+  "ApexList": {
+    "Thing": "$Controller"
+  },
+  "Port": 8080,
+  "Url": "Paint",
+  "Module": "xGraph.Web.Server",
+  "Apex": "2EC51630D68A47F6817D774F22808E71"
+}
