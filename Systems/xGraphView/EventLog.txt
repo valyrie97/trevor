@@ -1,14 +1,14 @@
 =================================================
-/usr/local/bin/node
-/Users/tjgionet/xCraft2/Nexus/Nexus/Nexus.js
+/usr/bin/nodejs
+/home/trevor/xCraft2/Nexus/Nexus/Nexus.js
 Config=config.json
-xGraph=/Users/tjgionet/trevor/../xGraph
-xCraft2=/Users/tjgionet/trevor/../xCraft2
-Scrapyard=/Users/tjgionet/trevor/
+xGraph=/home/trevor/Scrapyard/../xGraph
+xCraft2=/home/trevor/Scrapyard/../xCraft2
+Scrapyard=/home/trevor/Scrapyard/
 {
-  "xGraph": "/Users/tjgionet/trevor/../xGraph",
-  "Scrapyard": "/Users/tjgionet/trevor/",
-  "xCraft2": "/Users/tjgionet/trevor/../xCraft2",
+  "xGraph": "/home/trevor/Scrapyard/../xGraph",
+  "Scrapyard": "/home/trevor/Scrapyard/",
+  "xCraft2": "/home/trevor/Scrapyard/../xCraft2",
   "Cache": "cache",
   "Modules": {
     "Nexus": {
@@ -31,11 +31,3 @@ Scrapyard=/Users/tjgionet/trevor/
 }
 
 --Nexus/Initiate
-Getting file scripts.json from xGraph.Web.Server
-Getting file Nxs.js from xGraph.Web.Server
-
---Nexus/Run
-Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Getting file async.js from xGraph.Web.Server
-Getting module xGraph:Widgets/RootView
-Getting module Scrapyard:Modules/ThreeJsView

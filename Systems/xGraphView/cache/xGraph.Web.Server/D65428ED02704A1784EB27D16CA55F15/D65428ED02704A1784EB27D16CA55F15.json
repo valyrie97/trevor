@@ -2,12 +2,12 @@
   "$Setup": "Setup",
   "$Start": "Start",
   "Entity": "Http.js",
-  "Pid": "2EC51630D68A47F6817D774F22808E71",
+  "Pid": "D65428ED02704A1784EB27D16CA55F15",
   "ApexList": {
-    "Thing": "$Controller"
+    "Thing": "D8819CB4F0C24166A8C0D10D8A410DD3"
   },
   "Port": 8080,
   "Url": "Paint",
   "Module": "xGraph.Web.Server",
-  "Apex": "2EC51630D68A47F6817D774F22808E71"
+  "Apex": "D65428ED02704A1784EB27D16CA55F15"
 }
