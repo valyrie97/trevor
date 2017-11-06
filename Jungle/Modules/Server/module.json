@@ -1,0 +1,18 @@
+{
+  "input": {
+    "required":[],
+    "opts":[]
+  },
+  "output":{
+    "required":[{"par":"ApexList"}],
+    "opts":[{"par":"Login","cmd":["GenPage"]}]
+  },
+  "par": {
+    "required":["ApexList","Url"],
+    "opts":["Port","Login"]
+  },
+  "name": "Server",
+  "icon": "icon.png",
+  "doc": "Server.md",
+  "src": "xGraph:Web/Server"
+}

@@ -1,0 +1,15 @@
+{
+	"Modules": {
+		"RootView": {
+			"Module": "Jungle.Modules.RootView",
+			"Par": {
+				"Layout": "$3DView"
+			}
+		},
+		"3DView": {
+			"Module":"Jungle.Modules.3DView",
+			"Par": {
+			}
+		}
+	}
+}
