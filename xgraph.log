@@ -1,0 +1,1064 @@
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) r
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) --local
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) ./
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph:Web/Server",
+      "Par": {
+        "Nxs": "{xGraph}Web/Server/Nxs.js",
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) Compiling xGraph:Web/Server
+Tue Nov 28 2017 09:32:19 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 09:32:20 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 09:32:20 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 09:32:20 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 09:32:20 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 09:32:20 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 09:32:28 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 09:32:28 GMT-0500 (EST) Apex {
+  "Server": "DE16B54E1A7C4A1B92CCE85E485DE208"
+}
+Tue Nov 28 2017 09:32:28 GMT-0500 (EST) Server {
+  "Module": "xGraph:Web/Server",
+  "Par": {
+    "Nxs": "{xGraph}Web/Server/Nxs.js",
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:32:28 GMT-0500 (EST) compileInstance DE16B54E1A7C4A1B92CCE85E485DE208 {
+  "Module": "xGraph:Web/Server",
+  "Par": {
+    "Nxs": "{xGraph}Web/Server/Nxs.js",
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:32:28 GMT-0500 (EST) File <Scrapyard:Modules/HeatBugsModule> prefix not defined
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) r
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) --local
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) ./
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 09:33:41 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 09:33:42 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 09:33:42 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 09:33:42 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 09:33:42 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 09:33:42 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 09:33:49 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Apex {
+  "Server": "C92061622F48479B9F558CCED083B164"
+}
+Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:33:49 GMT-0500 (EST) compileInstance C92061622F48479B9F558CCED083B164 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 09:33:49 GMT-0500 (EST)
+Tue Nov 28 2017 09:33:49 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) r
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) --local
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) ./
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 09:36:14 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 09:36:22 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Apex {
+  "Server": "004B3BD128984162867B8E83474FBE60"
+}
+Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:36:22 GMT-0500 (EST) compileInstance 004B3BD128984162867B8E83474FBE60 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 09:36:22 GMT-0500 (EST)
+Tue Nov 28 2017 09:36:22 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) r
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) --local
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) ./
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 09:41:04 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 09:41:05 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 09:41:05 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 09:41:05 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 09:41:05 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 09:41:05 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 09:41:13 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Apex {
+  "Server": "EB3064D07D7E4393B2E0D7156930D5F3"
+}
+Tue Nov 28 2017 09:41:13 GMT-0500 (EST) compileInstance EB3064D07D7E4393B2E0D7156930D5F3 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 09:41:13 GMT-0500 (EST)
+Tue Nov 28 2017 09:41:13 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) r
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) --local
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) ./
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 09:57:15 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 09:57:16 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 09:57:16 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 09:57:16 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 09:57:16 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 09:57:16 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 09:57:24 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Apex {
+  "Server": "A55FD52E815249B3B78B92C481D26304"
+}
+Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:57:24 GMT-0500 (EST) compileInstance A55FD52E815249B3B78B92C481D26304 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 09:57:24 GMT-0500 (EST)
+Tue Nov 28 2017 09:57:24 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) r
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) --local
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) ./
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 10:16:15 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 10:16:16 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 10:16:24 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Apex {
+  "Server": "7AFED49252BC420BB94D47D341A0489B"
+}
+Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 10:16:24 GMT-0500 (EST) compileInstance 7AFED49252BC420BB94D47D341A0489B {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 10:16:24 GMT-0500 (EST)
+Tue Nov 28 2017 10:16:24 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) r
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:35:02 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:35:03 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:35:03 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:35:03 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:35:03 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:35:03 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:35:11 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Apex {
+  "Server": "AA2DA3A2C5F3422E9F2216E6A418E8DE"
+}
+Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:35:11 GMT-0500 (EST) compileInstance AA2DA3A2C5F3422E9F2216E6A418E8DE {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:35:11 GMT-0500 (EST)
+Tue Nov 28 2017 12:35:11 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) r
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:36:23 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:36:24 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:36:24 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:36:24 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:36:24 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:36:24 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:36:32 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Apex {
+  "Server": "5653B433BE8E4F1BA5FC34C3A3DCF09A"
+}
+Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:36:32 GMT-0500 (EST) compileInstance 5653B433BE8E4F1BA5FC34C3A3DCF09A {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:36:32 GMT-0500 (EST)
+Tue Nov 28 2017 12:36:32 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) r
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:37:45 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:37:46 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:37:46 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:37:46 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:37:46 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:37:46 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:37:54 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Apex {
+  "Server": "5B1E2E05BC7F4320BF4361E38ABC8E2A"
+}
+Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:37:54 GMT-0500 (EST) compileInstance 5B1E2E05BC7F4320BF4361E38ABC8E2A {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:37:54 GMT-0500 (EST)
+Tue Nov 28 2017 12:37:54 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) r
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:38:42 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:38:43 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:38:43 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:38:43 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:38:43 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:38:43 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:38:50 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Apex {
+  "Server": "309D66AB3DB94BE6892F5499492B0871"
+}
+Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:38:50 GMT-0500 (EST) compileInstance 309D66AB3DB94BE6892F5499492B0871 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:38:50 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:38:50 GMT-0500 (EST)
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) r
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:39:40 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:39:48 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Apex {
+  "Server": "69DE1038CC904939AAB14AEE658EDED3"
+}
+Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:39:48 GMT-0500 (EST) compileInstance 69DE1038CC904939AAB14AEE658EDED3 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:39:48 GMT-0500 (EST)
+Tue Nov 28 2017 12:39:48 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) r
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:40:26 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:40:27 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:40:27 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:40:27 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:40:27 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:40:27 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:40:34 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Apex {
+  "Server": "56EB825467AA44C7A9FD5C6217BD4E1D"
+}
+Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:40:34 GMT-0500 (EST) compileInstance 56EB825467AA44C7A9FD5C6217BD4E1D {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:40:34 GMT-0500 (EST)
+Tue Nov 28 2017 12:40:34 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) r
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:44:23 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:44:31 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Apex {
+  "Server": "42ACBF5B003A48EE9C79E6C47E806034"
+}
+Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:44:31 GMT-0500 (EST) compileInstance 42ACBF5B003A48EE9C79E6C47E806034 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:44:31 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:44:31 GMT-0500 (EST)
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) r
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) --local
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) ./
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 12:44:56 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 12:44:57 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 12:44:57 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 12:44:57 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 12:44:57 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 12:44:57 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 12:45:04 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Apex {
+  "Server": "6E809504517943E8A1D11C6FE6AC1DB9"
+}
+Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:45:04 GMT-0500 (EST) compileInstance 6E809504517943E8A1D11C6FE6AC1DB9 {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 12:45:04 GMT-0500 (EST)
+Tue Nov 28 2017 12:45:04 GMT-0500 (EST) =================================================
+
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) Genesis Setup:
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) r
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) Systems/HeatBugs/
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) --cwd
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) --local
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) ./
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) --xgraph
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) ../xGraph
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) =================================================
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) Genesis Compile Start:
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) Compiling xGraph.Web.Server
+Tue Nov 28 2017 13:23:50 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Tue Nov 28 2017 13:23:52 GMT-0500 (EST) dependencies installed correctly
+Tue Nov 28 2017 13:23:52 GMT-0500 (EST) --populate : Writing Cache to Disk
+Tue Nov 28 2017 13:23:52 GMT-0500 (EST) Writing Module xGraph.Web.Server to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Tue Nov 28 2017 13:23:52 GMT-0500 (EST) xGraph.Web.Server: Updating and installing dependencies
+Tue Nov 28 2017 13:23:52 GMT-0500 (EST) {
+  "name": "Web",
+  "version": "0.0.3",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
+Tue Nov 28 2017 13:23:59 GMT-0500 (EST) xGraph.Web.Server: dependencies installed correctly
+Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Apex {
+  "Server": "F4AE487744184EEB8AC5E929D7088B8E"
+}
+Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 13:23:59 GMT-0500 (EST) compileInstance F4AE487744184EEB8AC5E929D7088B8E {
+  "Module": "xGraph.Web.Server",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 13:23:59 GMT-0500 (EST)
+Tue Nov 28 2017 13:23:59 GMT-0500 (EST) =================================================
+

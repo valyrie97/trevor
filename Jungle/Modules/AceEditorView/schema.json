@@ -1,7 +1,0 @@
-{
-	"Apex": {
-		"Entity": "AceEditorView.js",
-		"$Setup": "Setup",
-		"$Start": "Start"
-	}
-}

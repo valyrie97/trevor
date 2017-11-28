@@ -1,40 +1,51 @@
 (function SceneManager() {
 
-	let dispatch =  {
+	let dispatch = {
 		Start: Start,
-		Setup:Setup
+		Setup: Setup
 	};
 
 	return {
 		dispatch: dispatch
-		};
+	};
 
 	//-----------------------------------------------------rgbToHex
 	function rgbToHex(r, g, b) {
 		return (r << 16) + (g << 8) + b;
 	}
 
-	//-----------------------------------------------------Start
-	function Setup(com, fun) {
-		//this.super(com, (err, cmd) => {
-		console.log('--SceneManager/Setup');
+	//-----------------------------------------------------Setup
+	async function Setup(com, fun) {
+		log.v('--SceneManager/Setup');
+
+		//setups need to be manaually sent to all not Apex entities
+		let setupArray = [
+			new Promise((resolve, reject) => {
+				this.send({ Cmd: "Setup" }, this.Par.HeatField, resolve);
+			}),
+			new Promise((resolve, reject) => {
+				this.send({ Cmd: "Setup" }, this.Par.BugArray, resolve);
+			})
+		];
 
 		var Vlt = this.Vlt;
-		let Par= this.Par;
+		let Par = this.Par;
 		let that = this;
 		Vlt.Active = false;
 		Vlt.Mouse = {};
 		Vlt.Mouse.Mode = 'Idle';
 		Vlt.Mouse.inPanel = true;
 
+		//this is the old way of creating brower side divs for an easier approach look into xGraph Views
 		var div = document.createElement('div');
-		div.id = Par.Div;
+		div.id = 'Grok';
 		div.style.height = '100%';
 		document.getElementsByTagName('body')[0].appendChild(div);
 
-
 		$("body").css('overflow', 'hidden');
 		var Grok = $('#Grok');
+
+		//this is the old way of utilizing mouse interaction for a modern approach look at 3DView.js
 		Grok.mouseenter(function (evt) {
 			mouseEnter(evt, that);
 		});
@@ -53,31 +64,36 @@
 		Grok.mouseup(function (evt) {
 			mouseUp(evt, that);
 		});
-		window.addEventListener('keydown', function(evt) {
-			switch(evt.code) {
-				case 'F10':
-					evt.preventDefault();
-					openCLI();
-					break;
-				case 'F2':
+		window.addEventListener('keydown', function (evt) {
+			switch (evt.keyCode) {
+				case 113:
 					if (Vlt.Active)
 						Vlt.Active = false;
 					else
 						Vlt.Active = true;
-						Vlt.knt = 0;
+					Vlt.knt = 0;
+					break;
+				case 32:
+					if (Vlt.Active)
+						Vlt.Active = false;
+					else
+						Vlt.Active = true;
+					Vlt.knt = 0;
+					break;
 				default:
 			}
 		});
 
+		window.alert("Press the Spacebar or F2 key to toggle operation");
+
 		var div = document.getElementById("Grok");
-		Vlt.Render = new THREE.WebGLRenderer({antialias: true});
-//		Vlt.Render.setClearColor(0xF2EEE1, 1);
+		Vlt.Render = new THREE.WebGLRenderer({ antialias: true });
 
 		Vlt.Render.setSize(div.scrollWidth, div.scrollHeight);
 		div.appendChild(Vlt.Render.domElement);
 
 		Vlt.Scene = new THREE.Scene();
-		Vlt.Focus = new THREE.Vector3(Par.Focus[0],Par.Focus[1],Par.Focus[2]);
+		Vlt.Focus = new THREE.Vector3(Par.Focus[0], Par.Focus[1], Par.Focus[2]);
 
 		Vlt.Camera = new THREE.PerspectiveCamera(45,
 			div.scrollWidth / div.scrollHeight, 0.1, 2000000);
@@ -87,21 +103,8 @@
 		Vlt.Camera.up.set(0.0, 0.0, 1.0);
 		Vlt.Camera.lookAt(Vlt.Focus);
 		Vlt.Camera.updateProjectionMatrix();
-
-		// Vlt.Root = new THREE.Object3D();
-		// Vlt.Scene.add(Vlt.Root);
-
-
 		Vlt.Ray = new THREE.Raycaster();
 		Vlt.Mouse.Mode = 'Idle';
-		// Vlt.txtPivot = new THREE.Object3D();
-		// Vlt.txtPosition = new THREE.Object3D();
-
-		// Vlt.Light = new THREE.DirectionalLight(0xFFFFFF);
-		// Vlt.Light.position.set(-40, 60, 100);
-		//Vlt.Scene.add(Vlt.Light);
-		// Vlt.Ambient = new THREE.AmbientLight(0x808080);
-		// Vlt.Scene.add(Vlt.Ambient);
 
 		var axes = new THREE.AxisHelper(100);
 		axes.position.z = 0.01;
@@ -110,121 +113,98 @@
 		Resize(Vlt);
 		renderLoop(Vlt);
 
-		if (fun){
-			fun(null,com);
+		//dont return until all other setups are complete
+		await Promise.all(setupArray);
+
+		if (fun) {
+			fun(null, com);
 		}
+
 		//-----------------------------------------------------Render
 		function renderLoop(vault) {
 			Vlt = vault;
 			loop();
 
 			function loop() {
-
 				Vlt.Render.render(Vlt.Scene, Vlt.Camera);
-				// if (Vlt.Scene.getObjectByName('particles')) {
-				// 	Vlt.Scene.getObjectByName('particles').tick();
-				// }
-
-				//move the camera
-				// var cam = Vlt.Camera;
-				// var pos = Vlt.txtPosition;
-				// var pvt = Vlt.txtPivot;
-				// var vec = new THREE.Vector3();
-				// vec.x = cam.position.x - pos.position.x;
-				// vec.y = cam.position.y - pos.position.y;
-				// vec.z = cam.position.z - pos.position.z;
-				// var rxy = Math.sqrt(vec.x * vec.x + vec.y * vec.y);
-				// var theta = Math.atan2(rxy, vec.z);
-				// var azm = Math.atan2(vec.x, vec.y);
-				// pvt.rotation.x = theta;
-				// pos.rotation.z = Math.PI - azm;
-				//	pos.position.x = 3;
 				requestAnimationFrame(loop);
 			}
 		}
-	//});
 	}
 
 
-	function Start (com, fun){
-		//this.super(com, (err, cmd) => {
-		console.log("--SceneManager/Start");
+	function Start(com, fun) {
+		log.v("--SceneManager/Start");
 		let Vlt = this.Vlt;
 		let Par = this.Par;
-		let that=this;
+		let that = this;
 
-		let delay = Par.Delay ||20;
-		console.log("Delay is ",delay);
+		let delay = Par.Delay || 20;
+		log.v("Delay is ", delay);
 		Vlt.Pulse = setInterval(step, delay);
 
-		function step () {
-			if (Vlt.Active){
+		function step() {
+			if (Vlt.Active) {
 
-				let q= {"Cmd":"MoveBugs"};
+				let q = { "Cmd": "MoveBugs" };
 
-				if (Vlt.Scene.getObjectByName("heatField")){
+				if (Vlt.Scene.getObjectByName("heatField")) {
 					q.heatField = true;
 				}
 
 				that.send(q, Par.BugArray, updateBugs);
 
 				function updateBugs(err, com) {
-					//console.log("returned from bug update");
-
+					//returned from bug update
 					if (err)
-						console.log("--Error: ",err);
-					if (Vlt.Scene.getObjectByName("bugSystem")){
-						Vlt.Scene.getObjectByName("bugSystem") .geometry = com.System.geometry;
-						Vlt.Scene.getObjectByName("bugSystem") .geometry.verticesNeedUpdate =true;
-						//Vlt.Scene.getObjectByName("bugSystem") .geometry.colorsNeedUpdate =true;
-
-					} else{
+						log.v("--Error: ", err);
+					if (Vlt.Scene.getObjectByName("bugSystem")) {
+						Vlt.Scene.getObjectByName("bugSystem").geometry = com.System.geometry;
+						Vlt.Scene.getObjectByName("bugSystem").geometry.verticesNeedUpdate = true;
+					} else {
 						let system = new THREE.Points(com.System.geometry, com.System.material);
 						system.name = "bugSystem";
-						system.sortParticles= true;
+						system.sortParticles = true;
 						Vlt.Scene.add(system);
-						console.log(Vlt.Scene.children);
 					}
 
-					let q={"Cmd": "UpdateField"};
-					if (Vlt.Scene.getObjectByName("bugSystem")){
-						q.vertices= Vlt.Scene.getObjectByName("bugSystem").geometry.vertices;
+					let q = { "Cmd": "UpdateField" };
+					if (Vlt.Scene.getObjectByName("bugSystem")) {
+						q.vertices = Vlt.Scene.getObjectByName("bugSystem").geometry.vertices;
 						q.outputTemps = Vlt.Scene.getObjectByName("bugSystem").geometry.outputTemps;
 					}
 
 					that.send(q, Par.HeatField, updateField);
 
 					function updateField(err, com) {
-						//console.log("returned from field update");
-
+						//returned from the field update
 						if (err)
-							console.log("--Error: ", err);
+							log.v("--Error: ", err);
 						if (Vlt.Scene.getObjectByName("heatField")) {
 							Vlt.Scene.getObjectByName("heatField").geometry = com.System.geometry;
 							Vlt.Scene.getObjectByName("heatField").geometry.colorsNeedUpdate = true;
 
 
 						} else {
-							let system= new THREE.Points(com.System.geometry,com.System.material);
-							system.name="heatField";
-							system.sortParticles=true;
+							let system = new THREE.Points(com.System.geometry, com.System.material);
+							system.name = "heatField";
+							system.sortParticles = true;
 							Vlt.Scene.add(system);
-							console.log(Vlt.Scene.children);
+							log.v(Vlt.Scene.children);
 						}
-						if (Vlt.knt % 100 ==0)
-							console.log("Count is ", Vlt.knt);
+						if (Vlt.knt % 100 == 0)
+							log.v("Count is ", Vlt.knt);
 						Vlt.knt++;
 					}
 				}
-			}else{
-				console.log("--sim not running--");
+			} else {
+				log.v("--sim not running--");
 			}
 		}
 
 
 		if (fun)
-			fun(null,com);
-	//});
+			fun(null, com);
 	}
 
 
@@ -233,7 +213,7 @@
 		var div = document.getElementById("Grok");
 		var w = div.scrollWidth;
 		var h = div.scrollHeight;
-		var Vlt= vault;
+		var Vlt = vault;
 		var parent = div;
 		var styles = getComputedStyle(parent);
 		div.style.overflow = 'hidden';
@@ -281,7 +261,7 @@
 	function mouseUp(evt, context) {
 		var info = {};
 		switch (evt.which) {
-			case 1:	// Left mouse
+			case 1: // Left mouse
 				info.Action = 'LeftMouseUp';
 				break;
 			case 3: // Right mouse
@@ -301,16 +281,9 @@
 
 		var evt = evt.originalEvent;
 
-		var direction  = (evt.detail<0 || evt.wheelDelta>0) ? 1: -1;
+		var direction = (evt.detail < 0 || evt.wheelDelta > 0) ? 1 : -1;
 		fac = direction;
 
-		// var delta = evt.originalEvent.wheelDelta;
-		// if (delta != null) {
-		// 	fac = delta / 120;
-		// } else {
-		// 	delta = evt.originalEvent.detail;
-		// 	fac = -delta / 3;
-		// }
 		var info = {};
 		info.Action = 'Wheel';
 		info.Factor = fac;
@@ -335,7 +308,7 @@
 	}
 
 	//-----------------------------------------------------mouseRay
-	function mouseRay(evt,vlt) {
+	function mouseRay(evt, vlt) {
 		var info = {};
 		vlt.Ray.precision = 0.00001;
 		container = document.getElementById("Grok");
@@ -348,40 +321,10 @@
 		var hits = vlt.Ray.intersectObjects(vlt.Scene.children, true);
 		var hit;
 		var obj;
-		//console.log('Hits length is', hits.length);
-		// for (var i = 0; i < hits.length; i++) {
-		// 	hit = hits[i];
-		// 	obj = hit.object;
-		//
-		// 	var pt;
-		// 	while (obj != null) {
-		//
-		// 		//	console.log('hit', hit);
-		// 		//	console.log('mouseRay', data);
-		//
-		// 		switch (obj.name) {
-		// 			case 'heatField':
-		//
-		// 				info.Type = 'heatField';
-		// 				info.Point = hit.point;
-		// 				break;
-		//
-		// 			case 'bugSystem':
-		// 				info.Type = 'bugSystem';
-		// 				info.Point = hit.point;
-		// 				break;
-		// 		}
-		// 		pt = hit.point;
-		//
-		//
-		// 		obj = obj.parent;
-		// 	}
-		// }
-
 		return info;
 	}
 
-//-----------------------------------------------------Dispatch
+	//-----------------------------------------------------Dispatch
 	function Dispatch(info, context) {
 		var vlt = context.Vlt;
 		var dispatch;
@@ -398,7 +341,6 @@
 		if ('Type' in info)
 			key += '.' + info.Type;
 		info.Key = key;
-//		console.log('Dispatch', key);
 		if (key in dispatch) {
 			var proc = dispatch[key];
 			proc(info, context);
@@ -409,19 +351,17 @@
 			q.Action = 'Harvest';
 			q.Keys = [];
 			proc(q, context);
-			for(var i=0; i<q.Keys.length; i++) {
+			for (var i = 0; i < q.Keys.length; i++) {
 				var key = q.Keys[i];
 				dispatch[key] = proc;
-				//	console.log('key', key);
 			}
 		}
 	}
 
 	//-----------------------------------------------------Zoom
 	// Move camera towards or away from Focus point
-	// TBD: Remove Three.js dependancy
 	function Zoom(info, context) {
-		if(info.Action == 'Harvest') {
+		if (info.Action == 'Harvest') {
 			info.Keys.push('Idle.Wheel');
 			return;
 		}
@@ -443,9 +383,8 @@
 		context.Vlt.Camera.updateProjectionMatrix();
 
 	}
-//-----------------------------------------------------Translate
+	//-----------------------------------------------------Translate
 	// Move in a plane perpendicular to the view vector
-	// TBD: Remove Three.js dependancy
 	function Translate(info, context) {
 		var dispatch = {
 			'Idle.LeftMouseDown.Terrain': start,
@@ -454,16 +393,15 @@
 			'Translate.Move.Terrain': move,
 			'Translate.LeftMouseUp': stop
 		}
-		if(info.Action == 'Harvest') {
-			for(key in dispatch)
+		if (info.Action == 'Harvest') {
+			for (key in dispatch)
 				info.Keys.push(key);
 			return;
 		}
-		if(info.Key in dispatch)
+		if (info.Key in dispatch)
 			dispatch[info.Key]();
 
 		function start() {
-			//	console.log('..Translate/start', info.Key);
 			var mouse = context.Vlt.Mouse;
 			mouse.Mode = 'Translate';
 			mouse.x = info.Mouse.x;
@@ -471,7 +409,6 @@
 		}
 
 		function move() {
-			//	console.log('..Translate/move', info.Key);
 			var mouse = context.Vlt.Mouse;
 			var vcam = new THREE.Vector3();
 			vcam.fromArray(context.Vlt.Camera.position.toArray());
@@ -503,7 +440,6 @@
 		}
 
 		function stop() {
-			//	console.log('..Translate/stop', info.Key);
 			var vlt = context.Vlt;
 			vlt.Mouse.Mode = 'Idle';
 		}
@@ -512,7 +448,6 @@
 
 	//-----------------------------------------------------Rotate
 	// Rotate view about current Focus
-	// TBD: Remove Three.js dependancy
 	function Rotate(info, context) {
 		var dispatch = {
 			'Idle.RightMouseDown.Terrain': start,
@@ -530,7 +465,6 @@
 			dispatch[info.Key]();
 
 		function start() {
-			//	console.log('..Rotate/start', info.Key);
 			var mouse = context.Vlt.Mouse;
 			mouse.Mode = 'Rotate';
 			mouse.x = info.Mouse.x;
@@ -538,7 +472,6 @@
 		}
 
 		function rotate() {
-			//	console.log('..Rotate/move', info.Key);
 			var mouse = context.Vlt.Mouse;
 			var vcam = new THREE.Vector3();
 			vcam.fromArray(context.Vlt.Camera.position.toArray());
@@ -563,7 +496,6 @@
 		}
 
 		function stop() {
-			//	console.log('..Translate/stop', info.Key);
 			var vlt = context.Vlt;
 			vlt.Mouse.Mode = 'Idle';
 		}

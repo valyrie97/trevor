@@ -1,10 +1,12 @@
 {
-  "Modules":{
-	"Heatbugs":{
-	  "Module":"Scrapyard:Modules/HeatBugsModule",
-	  "Par": {
-		  "Div":"Grok"
-	  }
+	"Sources": {
+		"local": "{local}"
+	},
+	"Modules": {
+		"Heatbugs": {
+			"Module": "local.Modules.HeatBugsModule",
+			"Par": {
+			}
+		}
 	}
-  }
 }

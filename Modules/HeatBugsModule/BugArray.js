@@ -12,7 +12,7 @@
 	};
 
 	function Setup(com, fun) {
-		console.log('--BugArray/Setup');
+		log.v('--BugArray/Setup');
 
 		let Par = this.Par;
 		let Vlt = this.Vlt;
@@ -45,7 +45,7 @@
 			}
 			Vlt.geometry.vertices.push(particle);
 
-			//Set the base color to be different lightness' of red based on eac
+			//Set the base color to be different lightness' of red based on each
 			//bugs personal temperature
 			color = new THREE.Color();
 			relativeTemp = Math.random();
@@ -70,7 +70,6 @@
 			}
 		}
 
-
 		if (fun)
 			fun();
 
@@ -78,7 +77,6 @@
 
 	function xyzToIdx (x,y,z,range){
 		let output = range*range*x+range*y+z;
-		//console.log(x,y,z, output);
 		if (x==0 && y==0 &&z==0)
 			debugger;
 		return output;
@@ -91,12 +89,11 @@
 	}
 
 	function MoveBugs(com, fun){
-		//console.log("--BugArray/MoveBugs");
 		let Vlt=this.Vlt;
 		let Par=this.Par;
 
 		if (!com.heatField){
-			console.log("No heat field we return the unedited bug system");
+			log.v("No heat field we return the unedited bug system");
 			com.System = {"geometry" :Vlt.geometry,"material":Vlt.material};
 			fun(null,com);
 			return;
@@ -118,25 +115,21 @@
 			for (let j=0;j<nbhd.x.length;j++){
 
 				if (vertex.x+nbhd.x[j]<0 ||vertex.x+nbhd.x[j]>=range) {
-					//console.log("out of range");
 					diffArr.push(10000000);
 					continue;
 				}
 				if (vertex.y+nbhd.y[j]<0 ||vertex.y+nbhd.y[j]>=range) {
 					diffArr.push(10000000);
-					//console.log("out of range");
 					continue;
 				}
 				if (vertex.z+nbhd.z[j]<0 ||vertex.z+nbhd.z[j]>=range) {
 					diffArr.push(10000000);
-					//console.log("out of range");
 					continue;
 				}
 
 				heatIdx = xyzToIdx(vertex.x+nbhd.x[j],vertex.y+nbhd.y[j],vertex.z+nbhd.z[j], range);
 				diff = .01*Math.random() + Math.abs(__HeatField[heatIdx]-wantTemp);
 				if (isNaN(diff)) {
-					//debugger;
 					diff = (.01*Math.random() + wantTemp);
 				}
 				diffArr.push(diff);
@@ -149,12 +142,8 @@
 
 				idx = Math.floor(Math.random() * nbhd.x.length);
 				while (diffArr[idx] == 10000000){
-					//console.log("while", diffArr);
 					idx = Math.floor(Math.random() * nbhd.x.length);
 				}
-				//console.log("*******************idx is ", idx);
-			}else {
-				//console.log("choose", diffArr[idx]);
 			}
 			vector = new THREE.Vector3((vertex.x+nbhd.x[idx]),
 						(vertex.y+nbhd.y[idx]),
