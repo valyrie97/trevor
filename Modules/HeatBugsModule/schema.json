@@ -24,7 +24,7 @@
 		},
 		"DesiredTemp":{
 			"Maximum":60,
-			"Minimum":40
+			"Minimum":10
 		},
 		"PRandMove":0.2,
 		"Nbhd":{

@@ -1,554 +1,111 @@
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) r
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) --local
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) ./
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) local=./
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) 
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Nexus Warming Up:
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) /usr/bin/node
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) r
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) cwd=Systems/HeatBugs/
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) xgraph=../xGraph/
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) local=./
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) 
 --Nexus/Initiate
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) ApexIndex {
-  "C92061622F48479B9F558CCED083B164": "xGraph.Web.Server"
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) ApexIndex {
+  "EFF2F2CBD78D4AC8959D9C9808E3FE13": "xGraph.Web.WebViewer"
 }
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Setup {
-  "C92061622F48479B9F558CCED083B164": "Setup"
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Setup {
+  "EFF2F2CBD78D4AC8959D9C9808E3FE13": "Setup"
 }
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Start {
-  "C92061622F48479B9F558CCED083B164": "Start"
-}
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 09:33:49 GMT-0500 (EST) 
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Start {}
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) --WebViewer/Setup
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST)  ** Spider listening on port 8080
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) 
 --Nexus/Run
-Tue Nov 28 2017 09:34:38 GMT-0500 (EST) [HTTP] /Paint
-Tue Nov 28 2017 09:34:38 GMT-0500 (EST) --Get /Paint
-Tue Nov 28 2017 09:34:43 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 09:34:43 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 09:35:12 GMT-0500 (EST) [HTTP] /Paint
-Tue Nov 28 2017 09:35:12 GMT-0500 (EST) --Get /Paint
-Tue Nov 28 2017 09:35:18 GMT-0500 (EST) [HTTP] /heatbugs
-Tue Nov 28 2017 09:35:18 GMT-0500 (EST) --Get /heatbugs
-Tue Nov 28 2017 09:35:30 GMT-0500 (EST) [HTTP] /HeatBugs
-Tue Nov 28 2017 09:35:30 GMT-0500 (EST) --Get /HeatBugs
-Tue Nov 28 2017 09:35:36 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 09:35:36 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) r
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) --local
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) ./
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) local=./
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) 
+Fri Dec 15 2017 13:01:08 GMT-0500 (EST) [HTTP] /Heatbugs
+Fri Dec 15 2017 13:01:08 GMT-0500 (EST) --Get /Heatbugs
+Fri Dec 15 2017 13:01:08 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:01:08 GMT-0500 (EST) Entity - Getting file jquery.min.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:01:08 GMT-0500 (EST) Entity - Getting file Viewify.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Nexus Warming Up:
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) /usr/bin/node
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) r
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) cwd=Systems/HeatBugs/
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) xgraph=../xGraph/
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) local=./
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) 
 --Nexus/Initiate
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) ApexIndex {
-  "004B3BD128984162867B8E83474FBE60": "xGraph.Web.Server"
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) ApexIndex {
+  "3EC115F51D1D49F982353478AAD6A414": "xGraph.Web.WebViewer"
 }
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Setup {
-  "004B3BD128984162867B8E83474FBE60": "Setup"
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Setup {
+  "3EC115F51D1D49F982353478AAD6A414": "Setup"
 }
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Start {
-  "004B3BD128984162867B8E83474FBE60": "Start"
-}
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 09:36:22 GMT-0500 (EST) 
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Start {}
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) --WebViewer/Setup
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST)  ** Spider listening on port 8080
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) 
 --Nexus/Run
-Tue Nov 28 2017 09:36:25 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 09:36:25 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 09:36:25 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) r
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) --local
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) ./
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) local=./
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) 
+Fri Dec 15 2017 13:02:34 GMT-0500 (EST) [HTTP] /Heatbugs
+Fri Dec 15 2017 13:02:34 GMT-0500 (EST) --Get /Heatbugs
+Fri Dec 15 2017 13:02:35 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:35 GMT-0500 (EST) Entity - Getting file jquery.min.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:35 GMT-0500 (EST) Entity - Getting file Viewify.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Nexus Warming Up:
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) /usr/bin/node
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) r
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) cwd=Systems/HeatBugs/
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) xgraph=../xGraph/
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) local=./
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) 
 --Nexus/Initiate
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) ApexIndex {
-  "EB3064D07D7E4393B2E0D7156930D5F3": "xGraph.Web.Server"
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) ApexIndex {
+  "699FDB536BAC454DA0191A92B4D07553": "xGraph.Web.WebViewer"
 }
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Setup {
-  "EB3064D07D7E4393B2E0D7156930D5F3": "Setup"
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Setup {
+  "699FDB536BAC454DA0191A92B4D07553": "Setup"
 }
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Start {
-  "EB3064D07D7E4393B2E0D7156930D5F3": "Start"
-}
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 09:41:13 GMT-0500 (EST) 
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Start {}
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) --WebViewer/Setup
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST)  ** Spider listening on port 8080
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) 
 --Nexus/Run
-Tue Nov 28 2017 09:41:16 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 09:41:16 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 09:41:17 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) r
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) --local
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) ./
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) local=./
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) ApexIndex {
-  "A55FD52E815249B3B78B92C481D26304": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Setup {
-  "A55FD52E815249B3B78B92C481D26304": "Setup"
-}
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Start {
-  "A55FD52E815249B3B78B92C481D26304": "Start"
-}
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 09:57:24 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 09:57:25 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 09:57:25 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 09:57:25 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 09:57:35 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 09:57:35 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 09:57:35 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) r
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) --local
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) ./
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) local=./
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) ApexIndex {
-  "7AFED49252BC420BB94D47D341A0489B": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Setup {
-  "7AFED49252BC420BB94D47D341A0489B": "Setup"
-}
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Start {
-  "7AFED49252BC420BB94D47D341A0489B": "Start"
-}
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 10:16:24 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 10:16:39 GMT-0500 (EST) [HTTP] /Paint
-Tue Nov 28 2017 10:16:39 GMT-0500 (EST) --Get /Paint
-Tue Nov 28 2017 10:16:45 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 10:16:45 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 10:16:45 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) r
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) ApexIndex {
-  "AA2DA3A2C5F3422E9F2216E6A418E8DE": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Setup {
-  "AA2DA3A2C5F3422E9F2216E6A418E8DE": "Setup"
-}
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Start {
-  "AA2DA3A2C5F3422E9F2216E6A418E8DE": "Start"
-}
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:35:11 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:35:36 GMT-0500 (EST) [HTTP] /Paint
-Tue Nov 28 2017 12:35:36 GMT-0500 (EST) --Get /Paint
-Tue Nov 28 2017 12:35:40 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:35:40 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:35:40 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) r
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Setup {
-  "5653B433BE8E4F1BA5FC34C3A3DCF09A": "Setup"
-}
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) ApexIndex {
-  "5653B433BE8E4F1BA5FC34C3A3DCF09A": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Start {
-  "5653B433BE8E4F1BA5FC34C3A3DCF09A": "Start"
-}
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:36:32 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:36:33 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:36:33 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:36:34 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) r
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) ApexIndex {
-  "5B1E2E05BC7F4320BF4361E38ABC8E2A": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Setup {
-  "5B1E2E05BC7F4320BF4361E38ABC8E2A": "Setup"
-}
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Start {
-  "5B1E2E05BC7F4320BF4361E38ABC8E2A": "Start"
-}
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:37:54 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:37:55 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:37:55 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:37:55 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) r
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) ApexIndex {
-  "309D66AB3DB94BE6892F5499492B0871": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Setup {
-  "309D66AB3DB94BE6892F5499492B0871": "Setup"
-}
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Start {
-  "309D66AB3DB94BE6892F5499492B0871": "Start"
-}
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:38:50 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:38:57 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:38:57 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:38:57 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) r
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) ApexIndex {
-  "69DE1038CC904939AAB14AEE658EDED3": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Setup {
-  "69DE1038CC904939AAB14AEE658EDED3": "Setup"
-}
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Start {
-  "69DE1038CC904939AAB14AEE658EDED3": "Start"
-}
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:39:48 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:39:53 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:39:53 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:39:53 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) r
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) ApexIndex {
-  "56EB825467AA44C7A9FD5C6217BD4E1D": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Setup {
-  "56EB825467AA44C7A9FD5C6217BD4E1D": "Setup"
-}
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Start {
-  "56EB825467AA44C7A9FD5C6217BD4E1D": "Start"
-}
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:40:34 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:40:41 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:40:41 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:40:42 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) r
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) ApexIndex {
-  "42ACBF5B003A48EE9C79E6C47E806034": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Setup {
-  "42ACBF5B003A48EE9C79E6C47E806034": "Setup"
-}
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Start {
-  "42ACBF5B003A48EE9C79E6C47E806034": "Start"
-}
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:44:31 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:44:33 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:44:33 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:44:34 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:44:40 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:44:40 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:44:40 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:44:41 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:44:41 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:44:41 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) r
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) --local
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) ./
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) local=./
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) ApexIndex {
-  "6E809504517943E8A1D11C6FE6AC1DB9": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Setup {
-  "6E809504517943E8A1D11C6FE6AC1DB9": "Setup"
-}
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Start {
-  "6E809504517943E8A1D11C6FE6AC1DB9": "Start"
-}
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 12:45:04 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 12:45:05 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 12:45:05 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 12:45:06 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) =================================================
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Nexus Warming Up:
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) /usr/bin/node
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/lib/Nexus/Nexus.js
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) r
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) --cwd
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) --local
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Systems/HeatBugs/
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) ./
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) --xgraph
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) ../xGraph
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) cwd=Systems/HeatBugs/
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) local=./
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) xgraph=../xGraph
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) cache=/home/tjgionet/trevor/Systems/HeatBugs/cache
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs/Systems/HeatBugs
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) 
---Nexus/Initiate
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) ApexIndex {
-  "F4AE487744184EEB8AC5E929D7088B8E": "xGraph.Web.Server"
-}
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Setup {
-  "F4AE487744184EEB8AC5E929D7088B8E": "Setup"
-}
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Start {
-  "F4AE487744184EEB8AC5E929D7088B8E": "Start"
-}
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) --Http/Setup
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) --Http/Start
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST)  ** Spider listening on port 8080
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Entity - Getting file scripts.json from xGraph.Web.Server
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Entity - Getting file Nxs.js from xGraph.Web.Server
-Tue Nov 28 2017 13:23:59 GMT-0500 (EST) 
---Nexus/Run
-Tue Nov 28 2017 13:24:10 GMT-0500 (EST) [HTTP] /Heatbugs
-Tue Nov 28 2017 13:24:10 GMT-0500 (EST) --Get /Heatbugs
-Tue Nov 28 2017 13:24:10 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.Server
+Fri Dec 15 2017 13:03:30 GMT-0500 (EST) [HTTP] /Heatbugs
+Fri Dec 15 2017 13:03:30 GMT-0500 (EST) --Get /Heatbugs
+Fri Dec 15 2017 13:03:31 GMT-0500 (EST) Entity - Getting file jszip.min_3.1.3.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:31 GMT-0500 (EST) Entity - Getting file jquery.min.js from xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:31 GMT-0500 (EST) Entity - Getting file Viewify.js from xGraph.Web.WebViewer

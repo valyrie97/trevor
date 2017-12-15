@@ -1062,3 +1062,306 @@ Tue Nov 28 2017 13:23:59 GMT-0500 (EST) compileInstance F4AE487744184EEB8AC5E929
 Tue Nov 28 2017 13:23:59 GMT-0500 (EST) Genesis Compile Stop: Tue Nov 28 2017 13:23:59 GMT-0500 (EST)
 Tue Nov 28 2017 13:23:59 GMT-0500 (EST) =================================================
 
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Genesis Setup:
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) r
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph/"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.Server",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Genesis Compile Start:
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) PreLoading xGraph.Web.Server
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) About to load xGraph.Web.Server
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Requesting xGraph.Web.Server from undefined
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraph/Web/Server'Module <../xGraph/Web/Server? not available
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Failed to retreive undefined
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraph/Web/Server'Module <../xGraph/Web/Server? not available
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraph/Web/Server'Module <../xGraph/Web/Server? not available
+Fri Dec 15 2017 13:00:29 GMT-0500 (EST) Error
+    at /home/tjgionet/xGraph/bin/linux/bin/xgraph:1549:32
+    at step (/home/tjgionet/xGraph/bin/linux/bin/xgraph:41:23)
+    at Object.throw (/home/tjgionet/xGraph/bin/linux/bin/xgraph:22:53)
+    at rejected (/home/tjgionet/xGraph/bin/linux/bin/xgraph:14:65)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) Genesis Setup:
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) r
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph/"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.WebViewer",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) Genesis Compile Start:
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) PreLoading xGraph.Web.WebViewer
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) About to load xGraph.Web.WebViewer
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) Requesting xGraph.Web.WebViewer from undefined
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) xGraph.Web.WebViewer returned from local file system
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) Successfully retrieved xGraph.Web.WebViewer
+Fri Dec 15 2017 13:00:48 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Fri Dec 15 2017 13:00:49 GMT-0500 (EST) dependencies installed correctly
+Fri Dec 15 2017 13:00:49 GMT-0500 (EST) --populate : Writing Cache to Disk
+Fri Dec 15 2017 13:00:49 GMT-0500 (EST) Writing Module xGraph.Web.WebViewer to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Fri Dec 15 2017 13:00:49 GMT-0500 (EST) xGraph.Web.WebViewer: Updating and installing dependencies
+Fri Dec 15 2017 13:00:49 GMT-0500 (EST) {
+  "name": "webviewer",
+  "version": "1.0.0",
+  "author": "Introspective Systems, LLC.",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "2.0.4"
+  }
+}
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) xGraph.Web.WebViewer: dependencies installed correctly
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Apex {
+  "Server": "EFF2F2CBD78D4AC8959D9C9808E3FE13"
+}
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) compileInstance EFF2F2CBD78D4AC8959D9C9808E3FE13 {
+  "Module": "xGraph.Web.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Setup
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) WebViewer.js
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) EFF2F2CBD78D4AC8959D9C9808E3FE13
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) xGraph.Web.WebViewer
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) EFF2F2CBD78D4AC8959D9C9808E3FE13
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) 8080
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Heatbugs
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) @file: Heatbugs.html
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) @system: browser.json
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) local.Modules.HeatBugsModule returned from local file system
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) Genesis Compile Stop: Fri Dec 15 2017 13:00:57 GMT-0500 (EST)
+Fri Dec 15 2017 13:00:57 GMT-0500 (EST) =================================================
+
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) Genesis Setup:
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) r
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph/"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.WebViewer",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) Genesis Compile Start:
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) PreLoading xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) About to load xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) Requesting xGraph.Web.WebViewer from undefined
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) xGraph.Web.WebViewer returned from local file system
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) Successfully retrieved xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:23 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Fri Dec 15 2017 13:02:24 GMT-0500 (EST) dependencies installed correctly
+Fri Dec 15 2017 13:02:24 GMT-0500 (EST) --populate : Writing Cache to Disk
+Fri Dec 15 2017 13:02:24 GMT-0500 (EST) Writing Module xGraph.Web.WebViewer to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Fri Dec 15 2017 13:02:24 GMT-0500 (EST) xGraph.Web.WebViewer: Updating and installing dependencies
+Fri Dec 15 2017 13:02:24 GMT-0500 (EST) {
+  "name": "webviewer",
+  "version": "1.0.0",
+  "author": "Introspective Systems, LLC.",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "2.0.4"
+  }
+}
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) xGraph.Web.WebViewer: dependencies installed correctly
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Apex {
+  "Server": "3EC115F51D1D49F982353478AAD6A414"
+}
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) compileInstance 3EC115F51D1D49F982353478AAD6A414 {
+  "Module": "xGraph.Web.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Setup
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) WebViewer.js
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) 3EC115F51D1D49F982353478AAD6A414
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) xGraph.Web.WebViewer
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) 3EC115F51D1D49F982353478AAD6A414
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) 8080
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Heatbugs
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) @file: Heatbugs.html
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) @system: browser.json
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) local.Modules.HeatBugsModule returned from local file system
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) Genesis Compile Stop: Fri Dec 15 2017 13:02:33 GMT-0500 (EST)
+Fri Dec 15 2017 13:02:33 GMT-0500 (EST) =================================================
+
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) Genesis Setup:
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) /home/tjgionet/xGraph/bin/linux/bin/xgraph
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) r
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) --cwd
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) Systems/HeatBugs/
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) --xgraph
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) ../xGraph/
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) --local
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) ./
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "../xGraph/"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Web.WebViewer",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) =================================================
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) Genesis Compile Start:
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) PreLoading xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) About to load xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) Requesting xGraph.Web.WebViewer from undefined
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) xGraph.Web.WebViewer returned from local file system
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) Successfully retrieved xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:15 GMT-0500 (EST) --refreshSystems: Updating and installing dependencies
+
+Fri Dec 15 2017 13:03:17 GMT-0500 (EST) dependencies installed correctly
+Fri Dec 15 2017 13:03:17 GMT-0500 (EST) --populate : Writing Cache to Disk
+Fri Dec 15 2017 13:03:17 GMT-0500 (EST) Writing Module xGraph.Web.WebViewer to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Fri Dec 15 2017 13:03:17 GMT-0500 (EST) xGraph.Web.WebViewer: Updating and installing dependencies
+Fri Dec 15 2017 13:03:17 GMT-0500 (EST) {
+  "name": "webviewer",
+  "version": "1.0.0",
+  "author": "Introspective Systems, LLC.",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "2.0.4"
+  }
+}
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) xGraph.Web.WebViewer: dependencies installed correctly
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Apex {
+  "Server": "699FDB536BAC454DA0191A92B4D07553"
+}
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Server {
+  "Module": "xGraph.Web.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) compileInstance 699FDB536BAC454DA0191A92B4D07553 {
+  "Module": "xGraph.Web.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Setup
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) WebViewer.js
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) 699FDB536BAC454DA0191A92B4D07553
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) xGraph.Web.WebViewer
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) 699FDB536BAC454DA0191A92B4D07553
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) 8080
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Heatbugs
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) @file: Heatbugs.html
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) @system: browser.json
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) local.Modules.HeatBugsModule returned from local file system
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Genesis Compile Stop: Fri Dec 15 2017 13:03:25 GMT-0500 (EST)
+Fri Dec 15 2017 13:03:25 GMT-0500 (EST) =================================================
+
