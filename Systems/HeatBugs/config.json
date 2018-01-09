@@ -5,7 +5,7 @@
 	},
 	"Modules": {
 		"Server": {
-			"Module": "xGraph.Web.WebViewer",
+			"Module": "xGraph.Core.Modules.WebViewer",
 			"Par": {
 				"Port": 8080,
 				"Url": "Heatbugs",
