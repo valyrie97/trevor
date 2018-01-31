@@ -1365,3 +1365,82 @@ Fri Dec 15 2017 13:03:25 GMT-0500 (EST) local.Modules.HeatBugsModule returned fr
 Fri Dec 15 2017 13:03:25 GMT-0500 (EST) Genesis Compile Stop: Fri Dec 15 2017 13:03:25 GMT-0500 (EST)
 Fri Dec 15 2017 13:03:25 GMT-0500 (EST) =================================================
 
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) =================================================
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) Genesis Setup:
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) /home/tjgionet/xGraphDev/bin/linux/bin/xgraph
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) r
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) --cwd
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) --local
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) Systems/HeatBugs/
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) ./
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) --xgraph
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) ./../xGraphDev
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./",
+    "xGraph": "./../xGraphDev"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.Core.Modules.WebViewer",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) Removed cacheDir: "{CacheDir}"
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) =================================================
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) PreLoading xGraph.Core.Modules.WebViewer
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) Genesis Compile Start:
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) About to load xGraph.Core.Modules.WebViewer
+Mon Jan 22 2018 08:16:43 GMT-0500 (EST) --refreshSystems: Installing xgraph dependencies
+
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) dependencies installed correctly
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) Including the Source in the Module name is Depricated
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) Requesting xGraph.Core.Modules.WebViewer from undefined
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) Successfully retrieved xGraph.Core.Modules.WebViewer
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) xGraph.Core.Modules.WebViewer returned from local file system
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) --populate : Writing Cache to Disk
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) Writing Module xGraph.Core.Modules.WebViewer to /home/tjgionet/trevor/Systems/HeatBugs/cache
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) xGraph.Core.Modules.WebViewer: Installing dependencies
+Mon Jan 22 2018 08:16:45 GMT-0500 (EST) {
+  "name" : "webviewer",
+  "version" : "1.0.0",
+  "author": "Introspective Systems, LLC.",
+  "license": "ISC",
+  "dependencies" : {
+    "socket.io" : "2.0.4"
+  }
+}
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) xGraph.Core.Modules.WebViewer: dependencies installed correctly
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) Apex List {
+  "Server": "86136451BA704BD79ED9A53F413F76F6"
+}
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) Server {
+  "Module": "xGraph.Core.Modules.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) compileInstance 86136451BA704BD79ED9A53F413F76F6 {
+  "Module": "xGraph.Core.Modules.WebViewer",
+  "Par": {
+    "Port": 8080,
+    "Url": "Heatbugs",
+    "HTML": "@file: Heatbugs.html",
+    "Heatbugs": "@system: browser.json"
+  }
+}
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) local.Modules.HeatBugsModule returned from local file system
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) Genesis Compile Stop: Mon Jan 22 2018 08:16:53 GMT-0500 (EST)
+Mon Jan 22 2018 08:16:53 GMT-0500 (EST) =================================================
+

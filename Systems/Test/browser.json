@@ -1,0 +1,34 @@
+{
+	"Sources": {
+		"xGraph": "{xGraph}"
+	},
+	"Modules": {
+		"RootView": {
+			"Module": "Core.Modules.RootView",
+			"Source": "xGraph",
+			"Par": {
+				"Layout": "$3DView"
+			}
+		},
+		"3DView": {
+			"Module":"Core.Modules.3DView",
+			"Source": "xGraph",			
+			"Par": {
+			}
+		},
+		"Deferred": [
+			{
+				"Module": "Core.Modules.Mouse",
+				"Source": "xGraph"
+			},
+			{
+				"Module": "Core.Modules.Popup",
+				"Source": "xGraph"
+			},
+			{
+				"Module": "Extensions.Modules.Modelx3D",
+				"Source": "xGraph"
+			}
+		]
+	}
+}

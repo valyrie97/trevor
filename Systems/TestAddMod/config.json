@@ -1,0 +1,22 @@
+{
+	"Sources": {
+		"local" : "{local}"
+	},
+	"Modules": {
+		"Builder":{
+			"Module": "trevor/Modules/AddModMod",
+			"Source": "local",
+			"Par":{
+				"Broker":"$Broker"
+			}
+		},
+		"Broker":{
+			"Module":"trevor/Modules/LocalBroker",
+			"Source":"local",
+			"Par":{
+				"Source": "/home/tjgionet/"
+			}
+		},
+		"Deferred": []
+	}
+}

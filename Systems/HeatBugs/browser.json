@@ -4,7 +4,8 @@
 	},
 	"Modules": {
 		"Heatbugs": {
-			"Module": "local.Modules.HeatBugsModule",
+			"Module": "trevor.Modules.HeatBugsModule",
+			"Source": "local",
 			"Par": {
 			}
 		}
