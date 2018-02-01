@@ -1444,3 +1444,196 @@ Mon Jan 22 2018 08:16:53 GMT-0500 (EST) local.Modules.HeatBugsModule returned fr
 Mon Jan 22 2018 08:16:53 GMT-0500 (EST) Genesis Compile Stop: Mon Jan 22 2018 08:16:53 GMT-0500 (EST)
 Mon Jan 22 2018 08:16:53 GMT-0500 (EST) =================================================
 
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) Genesis Setup:
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) /home/tjgionet/xGraphDev/bin/linux/bin/xgraph
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) r
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) --cwd
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) Systems/HeatBugs/
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) --local
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) ./../
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) xgraph
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) /home/tjgionet/xGraphDev/Core/Modules/
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./../"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraphDev.Core.Modules.WebViewer",
+      "Source": "local",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) Removed cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) Genesis Compile Start:
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) About to load xGraphDev.Core.Modules.WebViewer
+Thu Feb 01 2018 12:40:51 GMT-0500 (EST) --refreshSystems: Installing xgraph dependencies
+
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) dependencies installed correctly
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraphDev/Core/Modules/WebViewer'Module <../xGraphDev/Core/Modules/WebViewer? not available
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Requesting xGraphDev.Core.Modules.WebViewer from ./../
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Failed to retreive xGraphDev.Core.Modules.WebViewer
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraphDev/Core/Modules/WebViewer'Module <../xGraphDev/Core/Modules/WebViewer? not available
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraphDev/Core/Modules/WebViewer'Module <../xGraphDev/Core/Modules/WebViewer? not available
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Error
+    at /home/tjgionet/xGraphDev/bin/linux/bin/xgraph:1572:32
+    at step (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:41:23)
+    at Object.throw (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:22:53)
+    at rejected (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:14:65)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) xGraphDev/Core/Modules/WebViewer returned from local file system
+Thu Feb 01 2018 12:40:53 GMT-0500 (EST) Successfully retrieved xGraphDev.Core.Modules.WebViewer
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) Genesis Setup:
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) /home/tjgionet/xGraphDev/bin/linux/bin/xgraph
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) r
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) --cwd
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) Systems/HeatBugs/
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) --local
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) ./../
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) xgraph
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) /home/tjgionet/xGraphDev/Core/Modules/
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) {
+  "Sources": {
+    "local": "./../"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.WebViewer",
+      "Source": "local",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) Removed cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) Genesis Compile Start:
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) About to load xGraph.WebViewer
+Thu Feb 01 2018 12:41:26 GMT-0500 (EST) --refreshSystems: Installing xgraph dependencies
+
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) dependencies installed correctly
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Requesting xGraph.WebViewer from ./../
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraph/WebViewer'Module <../xGraph/WebViewer? not available
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Failed to retreive xGraph.WebViewer
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraph/WebViewer'Module <../xGraph/WebViewer? not available
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Error: ENOENT: no such file or directory, scandir '../xGraph/WebViewer'Module <../xGraph/WebViewer? not available
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Error
+    at /home/tjgionet/xGraphDev/bin/linux/bin/xgraph:1572:32
+    at step (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:41:23)
+    at Object.throw (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:22:53)
+    at rejected (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:14:65)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) xGraph/WebViewer returned from local file system
+Thu Feb 01 2018 12:41:28 GMT-0500 (EST) Successfully retrieved xGraph.WebViewer
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) Genesis Setup:
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) /home/tjgionet/xGraphDev/bin/linux/bin/xgraph
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) r
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) --cwd
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) Systems/HeatBugs/
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) --local
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) ./../
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) xgraph
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) /home/tjgionet/xGraphDev/Core/Modules/
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) Parameter <xgraph> not defined
+Thu Feb 01 2018 12:42:12 GMT-0500 (EST) Error
+    at /home/tjgionet/xGraphDev/bin/linux/bin/xgraph:1572:32
+    at step (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:41:23)
+    at Object.next (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:22:53)
+    at /home/tjgionet/xGraphDev/bin/linux/bin/xgraph:16:71
+    at Promise (<anonymous>)
+    at __awaiter (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:12:12)
+    at /home/tjgionet/xGraphDev/bin/linux/bin/xgraph:69:64
+    at Promise (<anonymous>)
+    at /home/tjgionet/xGraphDev/bin/linux/bin/xgraph:69:16
+    at genesis (/home/tjgionet/xGraphDev/bin/linux/bin/xgraph:1579:7)
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) Genesis Setup:
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) /home/tjgionet/xGraphDev/bin/linux/bin/xgraph
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) r
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) --cwd
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) Systems/HeatBugs/
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) --local
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) ./../
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) --xgraph
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) /home/tjgionet/xGraphDev/Core/Modules/
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) {
+  "Sources": {
+    "xgraph": "/home/tjgionet/xGraphDev/Core/Modules/"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.WebViewer",
+      "Source": "xGraph",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) Removed cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) Genesis Compile Start:
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) About to load xGraph.WebViewer
+Thu Feb 01 2018 12:42:21 GMT-0500 (EST) --refreshSystems: Installing xgraph dependencies
+
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) Genesis Setup:
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) /home/tjgionet/xGraphDev/bin/linux/bin/xgraph
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) r
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) --cwd
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) Systems/HeatBugs/
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) --local
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) /home/tjgionet/
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) --xgraph
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) /home/tjgionet/xGraphDev/Core/Modules/
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) CWD set to /home/tjgionet/trevor/Systems/HeatBugs
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) {
+  "Sources": {
+    "xgraph": "/home/tjgionet/xGraphDev/Core/Modules/"
+  },
+  "Modules": {
+    "Server": {
+      "Module": "xGraph.WebViewer",
+      "Source": "xGraph",
+      "Par": {
+        "Port": 8080,
+        "Url": "Heatbugs",
+        "HTML": "@file: Heatbugs.html",
+        "Heatbugs": "@system: browser.json"
+      }
+    }
+  }
+}
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) About to remove the cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) Removed cacheDir: "/home/tjgionet/trevor/Systems/HeatBugs/cache"
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) =================================================
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) Genesis Compile Start:
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) About to load xGraph.WebViewer
+Thu Feb 01 2018 12:42:51 GMT-0500 (EST) --refreshSystems: Installing xgraph dependencies
+

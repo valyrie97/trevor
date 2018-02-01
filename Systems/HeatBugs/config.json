@@ -1,11 +1,11 @@
 {
 	"Sources": {
-		"local": "{local}"
+		"xgraph": "{xgraph}"
 	},
 	"Modules": {
 		"Server": {
-			"Module": "xGraphDev.Core.Modules.WebViewer",
-			"Source": "local",
+			"Module": "xGraph.WebViewer",
+			"Source": "xGraph",
 			"Par": {
 				"Port": 8080,
 				"Url": "Heatbugs",
