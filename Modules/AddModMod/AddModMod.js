@@ -8,8 +8,8 @@
 			let Modules = {};
 
 			let ModNames = [
-				"xGraphDev.Core.Modules.Ping",
-				"xGraphDev.Core.Modules.Pong"
+				"xGraphDev.Core.Modules.xGraph.Ping",
+				"xGraphDev.Core.Modules.xGraph.Pong"
 			];
 
 			for (let idx = 0; idx < ModNames.length; idx++) {
