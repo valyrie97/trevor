@@ -1,0 +1,13 @@
+{
+	"Sources": {
+		"local": "{local}"
+	},
+	"Modules": {
+		"Server": {
+			"Module": "trevor.Modules.testSave",
+			"Source": "local",
+			"Par": {
+			}
+		}
+	}
+}

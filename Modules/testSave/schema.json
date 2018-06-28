@@ -1,0 +1,11 @@
+{
+	"Apex": {
+		"$Setup": "Setup",
+		"$Start": "Start",
+		"Entity": "Test.js",
+		"Pal":"#otherEnt"
+	},
+	"otherEnt":{
+		"Entity" :"Test.js"
+	}
+}

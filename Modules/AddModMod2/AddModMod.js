@@ -8,8 +8,7 @@
 			let Modules = {};
 
 			let ModNames = [
-				"CoreModules.Ping",
-				"CoreModules.Pong"
+				"trevor.Modules.testSave",
 			];
 
 			for (let idx = 0; idx < ModNames.length; idx++) {
@@ -20,7 +19,7 @@
 							log.e(err);
 							return;
 						}
-						Modules[ModNames[idx].split(".")[1]] = com.Module;
+						Modules[ModNames[idx].split(".")[2]] = com.Module;
 						res();
 					});
 				}));
@@ -52,15 +51,8 @@
 
 			this.genModule({
 				"Ping": {
-					"Module": "Ping",
+					"Module": "testSave",
 					"Par": {
-						"Pong": "$Pong"
-					}
-				},
-				"Pong": {
-					"Module": "Pong",
-					"Par": {
-						"Ping": "$Ping"
 					}
 				}
 			})
