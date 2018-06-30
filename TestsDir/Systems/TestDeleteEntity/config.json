@@ -11,8 +11,12 @@
 				"Modules": [
 					"trevor.TestsDir.Modules.DeletingModule"
 				],
-				"TestSystem":{
-					"Module":"trevor.TestsDir.Modules.DeletingModule"
+				"TestSystem": {
+					"Module": "trevor.TestsDir.Modules.DeletingModule",
+					"Par": {
+						"DeleteApex": false,
+						"SaveApexFirst": true
+					}
 				}
 			}
 		},
