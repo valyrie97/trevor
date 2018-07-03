@@ -1,0 +1,10 @@
+{
+	"Apex": {
+		"$Start": "Start",
+		"Entity": "SelfDelete.js",
+		"NonApexEntity":"#OtherEntity"
+	},
+	"OtherEntity":{
+		"Entity": "SelfDelete.js"
+	}
+}

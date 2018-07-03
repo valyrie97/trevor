@@ -1,0 +1,32 @@
+{
+	"Sources": {
+		"local": "{local}"
+	},
+	"Modules": {
+		"Builder": {
+			"Module": "trevor.TestsDir.Modules.AddModMod",
+			"Source": "local",
+			"Par": {
+				"Broker": "$Broker",
+				"Modules": [
+					"trevor.TestsDir.Modules.DeletingModule"
+				],
+				"TestSystem": {
+					"Module": "trevor.TestsDir.Modules.DeletingModule",
+					"Par": {
+						"DeleteApex": false,
+						"SaveApexFirst": true
+					}
+				}
+			}
+		},
+		"Broker": {
+			"Module": "trevor.TestsDir.Modules.LocalBroker",
+			"Source": "local",
+			"Par": {
+				"Source": "/Users/tjgionet/"
+			}
+		},
+		"Deferred": []
+	}
+}
