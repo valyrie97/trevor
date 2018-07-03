@@ -19,7 +19,7 @@
 							log.e(err);
 							return;
 						}
-						Modules[ModNames[idx].split(".")[2]] = com.Module;
+						Modules[ModNames[idx].split(".")[1]] = com.Module;
 						res();
 					});
 				}));

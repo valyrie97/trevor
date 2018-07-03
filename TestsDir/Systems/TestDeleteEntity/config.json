@@ -14,7 +14,7 @@
 				"TestSystem": {
 					"Module": "trevor.TestsDir.Modules.DeletingModule",
 					"Par": {
-						"DeleteApex": false,
+						"DeleteApex": true,
 						"SaveApexFirst": true
 					}
 				}
@@ -24,7 +24,7 @@
 			"Module": "trevor.TestsDir.Modules.LocalBroker",
 			"Source": "local",
 			"Par": {
-				"Source": "/Users/tjgionet/"
+				"Source": "{local}"
 			}
 		},
 		"Deferred": []
