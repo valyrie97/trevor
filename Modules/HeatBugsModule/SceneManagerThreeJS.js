@@ -37,7 +37,7 @@
 		Vlt.Mouse.inPanel = true;
 
 		//this is the old way of creating brower side divs for an easier approach look into xGraph Views
-		var div = document.createElement('div');
+		var div = Vlt.div;
 		div.id = 'Grok';
 		div.style.height = '100%';
 		document.getElementsByTagName('body')[0].appendChild(div);
