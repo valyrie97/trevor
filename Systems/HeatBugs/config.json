@@ -1,6 +1,6 @@
 {
 	"Sources": {
-		"xgraph": "{xgraph}"
+		"xGraph": "{xgraph}"
 	},
 	"Modules": {
 		"Server": {

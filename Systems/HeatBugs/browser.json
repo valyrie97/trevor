@@ -1,6 +1,6 @@
 {
 	"Sources": {
-		"local": "{local}"
+		"local": "./../../Modules"
 	},
 	"Modules": {
 		"Heatbugs": {
