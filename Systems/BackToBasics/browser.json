@@ -10,6 +10,11 @@
 			"Par": {
 				"Root": true
 			}
-		}
+		},
+		"Deferred": [
+			{
+				"Module": "xGraph.Mouse"
+			}
+		]
 	}
 }
