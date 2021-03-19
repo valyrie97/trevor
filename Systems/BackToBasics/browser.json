@@ -13,7 +13,8 @@
 		},
 		"Deferred": [
 			{
-				"Module": "xGraph.Mouse"
+				"Module": "xGraph.Mouse",
+				"Source": "Core"
 			}
 		]
 	}
