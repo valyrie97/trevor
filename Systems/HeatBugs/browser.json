@@ -4,7 +4,7 @@
 	},
 	"Modules": {
 		"Heatbugs": {
-			"Module": "Modules.HeatBugsModule",
+			"Module": "HeatBugsModule",
 			"Source": "local",
 			"Par": {
 			}
