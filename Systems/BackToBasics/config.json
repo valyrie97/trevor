@@ -1,0 +1,17 @@
+{
+	"Sources": {
+		"xGraph": "mb://xgraph.modulebroker.net"
+	},
+	"Modules": {
+		"Server": {
+			"Module": "xGraph.WebViewer",
+			"Source": "xGraph",
+			"Version": "1.5.2",
+			"Par": {
+				"Port": 8080,
+				"Url": "Heatbugs",
+				"Heatbugs": "@system: browser.json"
+			}
+		}
+	}
+}

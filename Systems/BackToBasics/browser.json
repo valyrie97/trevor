@@ -1,0 +1,15 @@
+{
+	"Sources": {
+		"Core": "mb://xgraph.modulebroker.net"
+	},
+	"Modules": {
+		"Heatbugs": {
+			"Module": "xGraph.3DView",
+			"Source": "Core",
+			"Version": "2.0.0",
+			"Par": {
+				"Root": true
+			}
+		}
+	}
+}
